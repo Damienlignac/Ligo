@@ -13,8 +13,8 @@ public class PersonphoneId implements Serializable {
 	@Column(name = "businessentityid", nullable = false)
 	private Integer businessentityid;
 
-	@Column(name = "phonenumber", columnDefinition = "public.Phone(29) not null")
-	private Object phonenumber;
+	@Column(name = "phonenumber", nullable = false)
+	private Integer phonenumber;
 
 	@Column(name = "phonenumbertypeid", nullable = false)
 	private Integer phonenumbertypeid;
@@ -31,7 +31,7 @@ public class PersonphoneId implements Serializable {
 		return phonenumber;
 	}
 
-	public void setPhonenumber(Object phonenumber) {
+	public void setPhonenumber(Integer phonenumber) {
 		this.phonenumber = phonenumber;
 	}
 

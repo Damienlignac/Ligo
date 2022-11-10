@@ -1,8 +1,6 @@
 package fr.ligo.ligo.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.UUID;
@@ -11,10 +9,15 @@ import java.util.UUID;
 @Table(name = "salesterritory", schema = "sales")
 public class Salesterritory {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "territoryid", nullable = false)
+	private Long territoryid;
+
 	@Column(name = "countryregioncode", nullable = false, length = 3)
 	private String countryregioncode;
 
-	@Column(name = "\"group\"", nullable = false, length = 50)
+	@Column(name = "group", nullable = false, length = 50)
 	private String group;
 
 	@Column(name = "salesytd", nullable = false)
@@ -93,6 +96,14 @@ public class Salesterritory {
 
 	public String getCountryregioncode() {
 		return countryregioncode;
+	}
+
+	public Long getTerritoryid() {
+		return territoryid;
+	}
+
+	public void setTerritoryid(Long territoryid) {
+		this.territoryid = territoryid;
 	}
 
 	public void setCountryregioncode(String countryregioncode) {

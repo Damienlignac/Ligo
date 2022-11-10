@@ -1,4 +1,4 @@
-package fr.ligo.ligo.application;
+package fr.ligo.ligo;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
