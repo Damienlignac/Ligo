@@ -5,8 +5,9 @@ import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 import java.time.Instant;
-
+import fr.ligo.ligo.services.EntityLigoSystem;
 @Entity
+@EntityLigoSystem
 @Table(name = "salesorderheadersalesreason", schema = "sales")
 public class Salesorderheadersalesreason {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

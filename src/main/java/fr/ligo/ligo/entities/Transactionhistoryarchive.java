@@ -6,8 +6,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.math.BigDecimal;
 import java.time.Instant;
-
+import fr.ligo.ligo.services.EntityLigoSystem;
 @Entity
+@EntityLigoSystem
 @Table(name = "transactionhistoryarchive", schema = "production")
 public class Transactionhistoryarchive {
 	@Id

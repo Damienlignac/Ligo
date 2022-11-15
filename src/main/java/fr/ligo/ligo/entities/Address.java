@@ -1,10 +1,13 @@
 package fr.ligo.ligo.entities;
 
+import fr.ligo.ligo.services.EntityLigoSystem;
+
 import javax.persistence.*;
 import java.time.Instant;
 import java.util.UUID;
 
 @Entity
+@EntityLigoSystem
 @Table(name = "address", schema = "person")
 public class Address {
 	@Id

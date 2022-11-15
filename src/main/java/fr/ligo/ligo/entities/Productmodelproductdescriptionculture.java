@@ -1,9 +1,10 @@
 package fr.ligo.ligo.entities;
-
+import fr.ligo.ligo.services.EntityLigoSystem;
 import javax.persistence.*;
 import java.time.Instant;
 
 @Entity
+@EntityLigoSystem
 @Table(name = "productmodelproductdescriptionculture", schema = "production")
 public class Productmodelproductdescriptionculture {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

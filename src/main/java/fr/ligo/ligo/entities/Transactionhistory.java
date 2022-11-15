@@ -3,8 +3,9 @@ package fr.ligo.ligo.entities;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.Instant;
-
+import fr.ligo.ligo.services.EntityLigoSystem;
 @Entity
+@EntityLigoSystem
 @Table(name = "transactionhistory", schema = "production")
 public class Transactionhistory {
 	@Id

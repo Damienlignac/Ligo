@@ -1,9 +1,12 @@
 package fr.ligo.ligo.entities;
 
+import fr.ligo.ligo.services.EntityLigoSystem;
+
 import javax.persistence.*;
 import java.time.Instant;
 
 @Entity
+@EntityLigoSystem
 @Table(name = "personphone", schema = "person")
 public class Personphone {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

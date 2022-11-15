@@ -4,8 +4,9 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.UUID;
-
+import fr.ligo.ligo.services.EntityLigoSystem;
 @Entity
+@EntityLigoSystem
 @Table(name = "salesterritory", schema = "sales")
 public class Salesterritory {
 

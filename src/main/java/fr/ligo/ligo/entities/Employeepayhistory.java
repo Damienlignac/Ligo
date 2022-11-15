@@ -1,5 +1,7 @@
 package fr.ligo.ligo.entities;
 
+import fr.ligo.ligo.services.EntityLigoSystem;
+
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
@@ -8,6 +10,7 @@ import java.math.BigDecimal;
 import java.time.Instant;
 
 @Entity
+@EntityLigoSystem
 @Table(name = "employeepayhistory", schema = "humanresources")
 public class Employeepayhistory {
 	@EmbeddedId

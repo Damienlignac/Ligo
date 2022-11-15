@@ -1,4 +1,4 @@
-package fr.ligo.ligo.services;
+package fr.ligo.ligo.services.request;
 
 import java.util.ArrayList;
 import java.util.List;

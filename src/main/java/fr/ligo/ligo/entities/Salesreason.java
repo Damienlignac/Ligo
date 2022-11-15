@@ -2,8 +2,9 @@ package fr.ligo.ligo.entities;
 
 import javax.persistence.*;
 import java.time.Instant;
-
+import fr.ligo.ligo.services.EntityLigoSystem;
 @Entity
+@EntityLigoSystem
 @Table(name = "salesreason", schema = "sales")
 public class Salesreason {
 	@Id

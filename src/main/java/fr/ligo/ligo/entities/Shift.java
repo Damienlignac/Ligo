@@ -3,8 +3,9 @@ package fr.ligo.ligo.entities;
 import javax.persistence.*;
 import java.time.Instant;
 import java.time.LocalTime;
-
+import fr.ligo.ligo.services.EntityLigoSystem;
 @Entity
+@EntityLigoSystem
 @Table(name = "shift", schema = "humanresources")
 public class Shift {
 	@Id

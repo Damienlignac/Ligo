@@ -3,8 +3,9 @@ package fr.ligo.ligo.entities;
 import javax.persistence.*;
 import java.time.Instant;
 import java.util.UUID;
-
+import fr.ligo.ligo.services.EntityLigoSystem;
 @Entity
+@EntityLigoSystem
 @Table(name = "productmodel", schema = "production")
 public class Productmodel {
 	@Id

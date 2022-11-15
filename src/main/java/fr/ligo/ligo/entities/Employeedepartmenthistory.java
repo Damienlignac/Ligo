@@ -1,10 +1,13 @@
 package fr.ligo.ligo.entities;
 
+import fr.ligo.ligo.services.EntityLigoSystem;
+
 import javax.persistence.*;
 import java.time.Instant;
 import java.time.LocalDate;
 
 @Entity
+@EntityLigoSystem
 @Table(name = "employeedepartmenthistory", schema = "humanresources")
 public class Employeedepartmenthistory {
 	@EmbeddedId

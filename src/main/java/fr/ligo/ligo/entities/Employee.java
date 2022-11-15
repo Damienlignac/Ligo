@@ -1,11 +1,14 @@
 package fr.ligo.ligo.entities;
 
+import fr.ligo.ligo.services.EntityLigoSystem;
+
 import javax.persistence.*;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.util.UUID;
 
 @Entity
+@EntityLigoSystem
 @Table(name = "employee", schema = "humanresources")
 public class Employee {
 	@Id
